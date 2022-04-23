@@ -1,26 +1,26 @@
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
+import * as React from 'react';
 
+//import components
+import {
+  Header,
+  Main,
+  Footer
+} from './components/index';
 
-function App() {
+//import MUI components
+import { 
+  Container,
+  Button
+} from '@mui/material';
 
+export default function App() {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        '& > :not(style)': {
-          m: 1,
-          width: 128,
-          height: 128,
-        },
-      }}
-    >
-      <Paper >
-        Hello
-      </Paper>
-    </Box>
+    <div>
+      <Container>
+        <Header />
+        <Main />
+        <Footer />
+      </Container>
+    </div>
   );
 }
-
-export default App;

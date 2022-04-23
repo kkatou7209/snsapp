@@ -1,0 +1,1 @@
+export const defaultApiBaseURL = 'http://localhost:8000';
